@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "David Gofman",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-st-nucleo-c031c6",
+      "id": "nucleo",
+      "top": -123.97,
+      "left": -298.58,
+      "attrs": {}
+    },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -121.37, "left": 6.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "$serialMonitor:TX", "nucleo:PA3", "", [] ],
+    [ "$serialMonitor:RX", "nucleo:PA2", "", [] ],
+    [ "lcd1:VSS", "nucleo:GND.9", "black", [ "v0" ] ],
+    [ "lcd1:K", "nucleo:GND.9", "black", [ "v0" ] ],
+    [ "lcd1:RW", "nucleo:GND.9", "black", [ "v0" ] ],
+    [ "lcd1:VDD", "nucleo:5V.2", "red", [ "v0" ] ],
+    [ "lcd1:RS", "nucleo:D12", "blue", [ "v0" ] ],
+    [ "lcd1:E", "nucleo:D11", "purple", [ "v0" ] ],
+    [ "lcd1:D4", "nucleo:D10", "green", [ "v0" ] ],
+    [ "lcd1:D5", "nucleo:D9", "magenta", [ "v86.4", "h-239.9", "v-19.2", "h19.2" ] ],
+    [ "lcd1:D6", "nucleo:D8", "gold", [ "v0" ] ],
+    [ "lcd1:D7", "nucleo:D7", "gray", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
