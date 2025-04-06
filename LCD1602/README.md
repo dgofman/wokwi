@@ -31,6 +31,9 @@ Here are the pin connections for the LCD1602 I2C module to the Nucleo board:
 | `D6`            | `D8`                | Gold       | Data Pin 6      |
 | `D7`            | `D7`                | Gray       | Data Pin 7      |
 
+
+![Wiring diagram](Screenshot.png)
+
 ## Code Overview
 
 The following files provide the code for the LCD display and hardware abstraction:
